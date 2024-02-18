@@ -19,12 +19,13 @@ function setup() {
 function draw() {
   // background is drawn first
   background(0, 0, 50); // deep blue
-  
+
   ufo(x, y, d, r); // call the ufo() function (see below)
   
   // add code here to change the ship location each frame
-  
-  
+  x+= 2; // add one to the value of x each frame
+  r+= -.02; // add .01 to the value of r each frame 
+
 }
 
 function ufo(tempX, tempY, tempD, tempR){
